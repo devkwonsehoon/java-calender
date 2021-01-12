@@ -15,15 +15,29 @@ public class Calendar {
 //		System.out.println("22 23 24 25 26 27 28");
 
 		// 두 수를 입력받아 합을 출력해보자. 
-		Scanner scanner = new Scanner(System.in);
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		System.out.println("두 수를 입력하세요.");
+//		
+//		int num1 = scanner.nextInt();
+//		int num2 = scanner.nextInt();
+//		
+//		System.out.println("두 수의 합은 " + (num1 + num2) + "입니다." );		
+//		scanner.close();
+	
 		
-		System.out.println("두 수를 입력하세요.");
+		// 달을 입력받아 해당하는 달의 최대 일수를 구해보자.
+		int day[] = {31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31};
 		
-		int num1 = scanner.nextInt();
-		int num2 = scanner.nextInt();
+		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("두 수의 합은 " + (num1 + num2) + "입니다." );		
-		scanner.close();
+		System.out.println("달을 입력하세요.");
+		int dal = scan.nextInt();
+		
+		System.out.println(dal+"월은 "+day[dal-1]+"일까지 있습니다.");
+		scan.close();
+		
+	
 		
 	}
 
